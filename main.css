@@ -181,3 +181,7 @@ p {
 		width:90%;
 	}
 }
+
+.wf-loading {
+  visibility: hidden;
+}
