@@ -7,26 +7,31 @@
 	<link rel="stylesheet" href="main.css" />
 </head>
 <body>
+
 <div class="masthead full-width">
 	<div class="inner-wrap">
 		<div class="info">
-			<img src="/me.png" class="portrait responsive-image" />
+			<img id="me" src="/me.png" class="portrait responsive-image" />
 			<h1>Sean Ahern</h1>
 			<div class="title">User Interface Developer / Designer</div>
+            <p>
+                <a href="mailto:sean@seanahern.com?subject=Hi, Sean!" class="button hello">SAY HELLO</a>
+            </p>
 		</div>
 	</div>
 </div>
+
+<canvas id="blurimage" height="200" width="200">
 <div class="bottom full-width">
 	<div class="inner-wrap">
-		<p>
-			<a href="mailto:sean@seanahern.com?subject=Hi, Sean!" class="button hello">SAY HELLO</a>
-		</p>
 	</div>
 </div>
 <div class="overlay"></div>
+<script type="text/javascript" src="/StackBlur.js"></script>
 <script type="text/javascript" src="//use.typekit.net/ses7hdm.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script>
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -41,6 +46,35 @@
   	setTimeout(function() {
   		overlay.parentElement.removeChild(overlay);
   	},1000);
+
+
+    $imgMe = document.getElementById("me");
+    $canvas = document.getElementById("blurimage");
+    $mashead = document.querySelector(".masthead");
+    console.log("image loaded");
+    var context = $canvas.getContext("2d");
+    context.clearRect( 0, 0, 200, 200 );
+    var bgImg = new Image();
+    bgImg.src ="me.png";
+    bgImg.onload = function () {
+      context.drawImage( $imgMe, -50, -75 );
+
+      stackBlurCanvasRGBA('blurimage', 0,0,200,200,65);
+      $canvas.style.position = "fixed";
+      $canvas.style.backgroundColor = "#C7966F";
+      $canvas.style.top = "0";
+      $canvas.style.left = "0";
+      $canvas.style.right = "0";
+      $canvas.style.width = "100%";
+      $canvas.style.height = "100%";
+      $canvas.style.zIndex = "0";
+      $canvas.style.opacity = 0.8;
+
+
+      $mashead.style.zIndex = "1";
+      $mashead.style.position = "absolute";
+    }
+
   });
 </script>
 </body>

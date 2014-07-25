@@ -5,6 +5,7 @@ body {
 	line-height:1.22em;
 	background-color:#F0F0F0;
 	color:#4D4D4D;
+	text-align:center;
 }
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video
 {
@@ -39,8 +40,8 @@ h1 {
 	display: inline-block;
 	padding: 18px 20px 15px 20px;
 	border-radius: 6px;
-	background-color: #FFF;
-	color: #6D6D6D;
+	background-color: rgba(256,256,256,0.2);
+	color: #ffffff;
 	cursor: pointer;
 	text-decoration: none;
 	font-family: 'source-code-pro';
@@ -52,18 +53,24 @@ h1 {
 	-ms-transition: All 0.5s ease;
 	transition: All 0.5s ease;
 	font-weight: 300;
-	border: 3px solid #666;
+	border: 3px solid #ffffff;
+}
+.button:hover {
+	background-color: rgba(256,256,256,0.4);
 }
 
 .masthead {
 	height:auto;
-	background-color:#FFFFFF;
+	width:100%;
 	padding: 40px 0px;
 	-webkit-transition: All 0.5s ease;
 	-moz-transition: All 0.5s ease;
 	-o-transition: All 0.5s ease;
 	-ms-transition: All 0.5s ease;
 	transition: All 0.5s ease;
+	background-color: rgb(256,256,256,0.1);
+	color: #ffffff;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.4);
 }
 
 .portrait {
@@ -85,6 +92,7 @@ h1 {
 
 
 .title {
+	margin-bottom: 60px;
 	font-size:1em;
 }
 
