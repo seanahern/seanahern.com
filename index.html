@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="description" content="User Interface Developer / Designer" />
-	<title>Sean Ahern</title>
-	<link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Front-end development, user interface design, consulting." />
+    <title>Sean Ahern</title>
+    <link rel="stylesheet" href="main.css" />
 </head>
 <body>
+<section>
+    <div class="container nav">
+        <div class="it-me">Sean Ahern</div>
+        <nav>
+            <a href="http://instagram.com/seanahern" class="button">@seanahern</a>
+            <a href="mailto:sean@seanahern.com" class="button">Contact</a>
+        </nav>
+    </div>
+</section>
+<section>
+    <div class="container about-me">
+        <p class="about">Front-end development, user interface design, consulting.</p>
+    </div>
+</section>
 
-<div class="masthead full-width">
-	<div class="inner-wrap">
-		<div class="info">
-			<img id="me" src="/me.png" class="portrait responsive-image" />
-			<h1>Sean Ahern</h1>
-			<div class="title">User Interface Developer / Designer</div>
-            <p>
-                <a href="mailto:sean@seanahern.com?subject=Hi, Sean!" class="button hello">SAY HELLO</a>
-            </p>
-		</div>
-	</div>
-</div>
-
-<canvas id="blurimage" height="200" width="200">
-<div class="bottom full-width">
-	<div class="inner-wrap">
-	</div>
-</div>
-<div class="overlay"></div>
-<script type="text/javascript" src="/StackBlur.js"></script>
 <script type="text/javascript" src="//use.typekit.net/ses7hdm.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -39,43 +34,6 @@
 
   ga('create', 'UA-1987314-1', 'auto');
   ga('send', 'pageview');
-
-  document.addEventListener("DOMContentLoaded", function() {
-  	var overlay = document.querySelector(".overlay");
-  	overlay.className += " " + "hide";
-  	setTimeout(function() {
-  		overlay.parentElement.removeChild(overlay);
-  	},1000);
-
-
-    $imgMe = document.getElementById("me");
-    $canvas = document.getElementById("blurimage");
-    $mashead = document.querySelector(".masthead");
-    console.log("image loaded");
-    var context = $canvas.getContext("2d");
-    context.clearRect( 0, 0, 200, 200 );
-    var bgImg = new Image();
-    bgImg.src ="me.png";
-    bgImg.onload = function () {
-      context.drawImage( $imgMe, -50, -75 );
-
-      stackBlurCanvasRGBA('blurimage', 0,0,200,200,65);
-      $canvas.style.position = "fixed";
-      $canvas.style.backgroundColor = "#C7966F";
-      $canvas.style.top = "0";
-      $canvas.style.left = "0";
-      $canvas.style.right = "0";
-      $canvas.style.width = "100%";
-      $canvas.style.height = "100%";
-      $canvas.style.zIndex = "0";
-      $canvas.style.opacity = 0.8;
-
-
-      $mashead.style.zIndex = "1";
-      $mashead.style.position = "absolute";
-    }
-
-  });
 </script>
 </body>
 </html>
