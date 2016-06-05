@@ -6,7 +6,8 @@
 
 body {
   font-size: 100%;
-  font-family: 'source-code-pro';
+  font-family: 'roboto';
+  letter-spacing: 1px;
   color: #666;
   text-align: center;
   line-height: 1.7em;
@@ -155,18 +156,18 @@ section + section {
 
 .button {
   display: inline-block;
-  padding: 7px 13px 4px;
-  border: 2px solid #333333;
-  border-radius: 5px;
+  padding: 7px 17px 6px;
+  border: 1px solid #666666;
+  border-radius: 3px;
   background-color: #ffffff;
   font-size: 0.9rem;
   line-height: 1.5rem;
   cursor: pointer;
-  -webkit-transition: All 0.5s ease;
-  -moz-transition: All 0.5s ease;
-  -o-transition: All 0.5s ease;
-  -ms-transition: All 0.5s ease;
-  transition: All 0.5s ease;
+  -webkit-transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
+  -moz-transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
+  -o-transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
+  -ms-transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
+  transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
 }
 
 .button:hover {
