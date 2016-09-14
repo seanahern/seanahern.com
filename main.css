@@ -286,9 +286,6 @@ nav {
   nav a {
     border-bottom: 1px solid currentColor;
   }
-  nav a + a {
-    margin-left: 10px;
-  }
   .button {
     float:none;
     margin-left: 4px;
