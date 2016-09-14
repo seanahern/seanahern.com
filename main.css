@@ -259,9 +259,6 @@ nav {
   .desktop {
     display: none;
   }
-  body {
-    font-size: 13px;
-  }
   section + section {
     margin-top: 0px;
   }
