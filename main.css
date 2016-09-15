@@ -119,7 +119,7 @@ section.nav {
 }
 
 .about-me .container{
-  height: calc(100vh - 80px);
+  height: calc(100vh - 140px);
   display: table;
   text-align:center;
   font-size: 1.4rem;
