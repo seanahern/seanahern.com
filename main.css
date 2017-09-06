@@ -177,6 +177,20 @@ section.nav {
   margin-top: 40px;
 }
 
+hr {
+  width: 30px;
+  height: 4px;
+  background-color: #efefef;
+  margin: 5px 0px 24px;
+  border: 0px;
+}
+
+.about {
+  font-size: 1.2rem;
+  margin: 15px 0 20px;
+  display: inline-block;
+}
+
 .row {
   margin-left: -25px;
   margin-right: -25px;
@@ -262,13 +276,11 @@ section.nav {
 .it-me {
   position: relative;
   float: left;
-  margin-left: 35px;
 }
 
 nav {
   position: relative;
   float: right;
-  margin-right: 35px;
 }
 
 .mobile {
