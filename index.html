@@ -5,7 +5,7 @@
   <meta name="description" content="Developer and designer based out of Portland, OR" />
   <title>Sean Ahern</title>
   <meta name="google-site-verification" content="_DqzCRrwwJerMUwsvsDQ0Nrs-45mqepyyfVfM235LV8" />
-  <link rel="stylesheet" href="main.css" />
+	<style type="text/css">body { opacity: 0; }</style>
 </head>
 <body>
 <section class="nav">
@@ -44,7 +44,21 @@
 </section>
 <noscript>
 	<style type="text/css">body { opacity: 1 !important; }</style>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
 </noscript>
+<script>
+	var loadDeferredStyles = function() {
+		var addStylesNode = document.getElementById("deferred-styles");
+		var replacement = document.createElement("div");
+		replacement.innerHTML = addStylesNode.textContent;
+		document.body.appendChild(replacement)
+		addStylesNode.parentElement.removeChild(addStylesNode);
+	};
+	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+			webkitRequestAnimationFrame || msRequestAnimationFrame;
+	if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+	else window.addEventListener('load', loadDeferredStyles);
+</script>	
 <script type="text/javascript" src="//use.typekit.net/ses7hdm.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script>
