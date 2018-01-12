@@ -21,6 +21,14 @@
   animation-fill-mode: both;
 }
 
+body {
+	opacity: 0;
+}
+
+.wf-active body {
+	opacity: 1;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
