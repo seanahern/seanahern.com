@@ -77,6 +77,10 @@ p + p {
   margin-top: 20px;
 }
 
+p a {
+  border-bottom: 1px solid currentColor;
+}
+
 ul + ul {
   margin-top: 20px;
 }
