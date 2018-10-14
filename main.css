@@ -387,13 +387,14 @@ nav {
 }
 
 .learnings .container {
-  max-width:35rem;
+  max-width: 35rem;
+	overflow: visible;
 }
 
 .learnings h1 {
   margin-bottom: 2rem;
   font-size: 1.7rem;
-  color:#000000;
+  color: #000000;
 }
 
 .learnings {
@@ -414,6 +415,28 @@ nav {
   padding-left: 0px;
   margin-left: 0px;
   padding-bottom: 25px;
+}
+
+.learnings ul.content li:before {
+	content: "•";
+	color: #0a0a0a;
+	left: -18px;
+	position: absolute;
+}
+
+.learnings ul.content li {
+  padding: inherit;
+  margin: inherit;
+}
+
+.learnings ul.content li {
+	padding: inherit;
+	margin: inherit;
+	padding-bottom: 15px;
+	line-height: 1.2rem;
+	position: relative;
+	list-style-type: none;
+	padding-left: initial;
 }
 
 .learnings .lists ul li:after {
@@ -444,11 +467,6 @@ nav {
   color: #000;
 }
 
-.learnings ul.content li {
-  padding: inherit;
-  margin: inherit;
-}
-
 .learnings ul.content li:after {
   content: none;
 }
@@ -461,18 +479,19 @@ nav {
 .learnings section.lists {
   font-size: 1.2rem;
   line-height: 2rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
   position: relative;
   list-style: none;
   padding-left: 0px;
   margin-left: 0px;
-  padding-top: 80px;
   background-color: #f7f7f7;
   margin-top: 0px;
+	padding-top: 80px;
 }
 
 .learnings .thanks {
   margin-top: 34px;
+	margin-bottom: 20px;
 }
 
 .learnings .thanks span {

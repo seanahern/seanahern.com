@@ -14,11 +14,9 @@
 			<h1>Learnings</h1>
 			<div class="date">10/12/1988</div>
 			<div class="summary">
-				<p>Today is the first day of my thirties. The following is a list of pieces of advice, lessons, phrases that held some significant weight for me in my twenties. I hope to carry these lessons into my thirties, and continue to grow as a person.</p>
+				<p>The following is a list of pieces of advice, lessons, phrases that held some significant weight for me in my twenties. I hope to carry these lessons into my thirties, and continue to grow as a person.</p>
 
-				<p>These notes aren't meant to be taken as universal cure-alls, but may provide some guidance or reminders for you as well. Reach out and <a href="mailto:sean@seanahern.com" title="sean@seanahern.com">say hello</a> if you have any questions or comments 👋.</p>
-
-				<p>Thanks for looking.<br /><br />&mdash; Sean</p>
+				<p>These quips aren't meant to be taken as universal cure-alls, but may provide some guidance or reminders for you.</p>
 			</div>
 		</div>
 	</section>
@@ -28,7 +26,7 @@
 			<li>The answers to most emotional, interpersonal, and relationship challenges can be found inside yourself</li>
 			<li>Child-like fun is a critical part of a healthy adulthood</li>
 			<li>Anxiety is subconscious suppression of fear. Find healthy ways to remove the suppression and express the feelings attached to your fear and you’ll be freed</li>
-			<li>Get extra sleep, drink water, get enough to eat, exercise daily</li>
+			<li>Get extra sleep</li>
 			<li>As early as possible, contribute to retirement savings in a low-fee fund. Automate the contribution, and max it out if you can afford to do so</li>
 			<li>Live within your means, split any surplus between stable investments and doing things that make you happy</li>
 			<li>Make time to travel, or at least time to spend in the great outdoors</li>
@@ -43,14 +41,17 @@
 			<li><a href="https://www.amazon.com/Power-Now-Guide-Spiritual-Enlightenment/dp/1577314808">The Power of Now</a></li>
 			<li><a href="https://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/0807014273">Man’s Search for Meaning</a></li>
 			<li><a href="https://www.amazon.com/Into-Wild-Jon-Krakauer/dp/0385486804">Into the Wild</a></li>
-			<li><a href="https://www.patagonia.com/product/let-my-people-go-surfing-revised-paperback-book/BK067.html?dwvar_BK067_color=000">Let My People Go Surfing</a></li>
 			<li><a href="https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382">Essentialism: The Disciplined Pursuit of Less</a></li>
 			<li><a href="https://www.youtube.com/watch?v=wQKFZJq3Gd0">The Power of Ceremony with Julie Piatt | Rich Roll Podcast</a></li>
 			<li><a href="https://www.amazon.com/Minimalism-Documentary-About-Important-Things/dp/B01KBKG9EO">Minimalism: a Documentary About Important Things</a></li>
-			<li><a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034">How to Win Friends & Influence People</a></li>
+			<li><a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034">How to win Friends</a></li>
 			<li><a href="https://www.amazon.com/4-Hour-Workweek-Escape-Live-Anywhere/dp/0307465357">The 4-Hour Workweek</a></li>
 			<li><a href="https://lifehacker.com/all-the-financial-advice-youll-ever-need-on-a-4x6-inde-1334131550">All the Financial Investment Advice You'll Ever Need on One Index Card</a></li>
 		</ul>
+		<div class="thanks">
+			<span>This list will surely continue to evolve. Thanks for looking.</span>
+			<span>&mdash; Sean</span>
+		</div>
 	</div>
 </section>
 <style type="text/css">body { opacity: 1 !important; }</style>
