@@ -25,6 +25,35 @@ body {
 	opacity: 0;
 }
 
+body.dark {
+	background-color: #33323b;
+	color: #d9d6e7;
+}
+
+body.dark a {
+	color: #e4e4e4;
+}
+
+body.dark ::selection {
+  color: #000;
+}
+
+body.dark .about {
+	color: #fff;
+}
+
+body.dark strong 	{
+	color: #fff;
+}
+
+body.dark .button {
+	background-color: #328dcf;
+}
+
+body.dark #mc_embed_signup input[type="email"] {
+  border: 0px solid #9b9b9b;
+}
+
 .wf-active body {
 	opacity: 1;
 }
@@ -73,6 +102,10 @@ a {
   color: inherit;
 }
 
+p {
+	line-height: 1.85em;
+}
+
 p + p {
   margin-top: 20px;
 }
@@ -100,7 +133,7 @@ p + ul {
 
 strong {
   font-size: 1.1em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: block;
 }
 
@@ -109,7 +142,7 @@ strong {
 }
 
 #mc_embed_signup input[type="email"] {
-  border: 1px solid #000;
+  border: 1px solid #9b9b9b;
   padding: 10px 15px;
   font-size: 0.9rem;
   margin-bottom: 15px;
@@ -282,26 +315,22 @@ hr {
 }
 
 .button {
-  display: inline-block;
-  padding: 7px 17px 6px;
-  border-radius: 1px;
-  background-color: #111111;
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-  cursor: pointer;
-  -webkit-transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
-  -moz-transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
-  -o-transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
-  -ms-transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
-  transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
-  color:#fff;
-  border-color: #111111;
+	display: inline-block;
+	padding: 11px 27px 12px;
+	border-radius: 1px;
+	background-color: #111111;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	cursor: pointer;
+	color: #fff;
+	border-color: #111111;
+	border: 0px solid;
+	border-radius: 2px;
+	transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
 }
 
 .button:hover {
-  background-color:#333333;
-  border-color: #333333;
-  color: #ffffff;
+	transform: translateY(-3px);
 }
 
 .it-me {
