@@ -25,33 +25,36 @@ body {
 	opacity: 0;
 }
 
-body.dark {
-	background-color: #33323b;
-	color: #d9d6e7;
-}
 
-body.dark a {
-	color: #e4e4e4;
-}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #33323b;
+		color: #d9d6e7;
+	}
 
-body.dark ::selection {
-  color: #000;
-}
+	body a {
+		color: #e4e4e4;
+	}
 
-body.dark .about {
-	color: #fff;
-}
+	body ::selection {
+		color: #000;
+	}
 
-body.dark strong 	{
-	color: #fff;
-}
+	body .about {
+		color: #fff;
+	}
 
-body.dark .button {
-	background-color: #328dcf;
-}
+	body strong 	{
+		color: #fff;
+	}
 
-body.dark #mc_embed_signup input[type="email"] {
-  border: 0px solid #9b9b9b;
+	body .button {
+		background-color: #328dcf;
+	}
+
+	body #mc_embed_signup input[type="email"] {
+		border: 0px solid #9b9b9b;
+	}
 }
 
 .wf-active body {
