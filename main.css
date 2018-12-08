@@ -52,6 +52,9 @@ body.dark .button {
 	background-color: #328dcf;
 }
 
+.text-center {
+  text-align: center;
+}
 
 .wf-active body {
 	opacity: 1;
@@ -315,8 +318,7 @@ hr {
 
 .button {
 	display: inline-block;
-	padding: 11px 27px 12px;
-	border-radius: 1px;
+  padding: 10px 27px 10px;
 	background-color: #111111;
 	font-size: 0.9rem;
 	line-height: 1.5rem;
@@ -325,11 +327,7 @@ hr {
 	border-color: #111111;
 	border: 0px solid;
 	border-radius: 2px;
-	transition: All 0.5s cubic-bezier(0.4, 0.01, 0.1, 1);
-}
-
-.button:hover {
-	transform: translateY(-3px);
+  font-weight: bold;
 }
 
 .it-me {
@@ -524,4 +522,41 @@ nav {
 
 .learnings .thanks span {
   display: block;
+}
+
+.contact-summary {
+  display: block;
+  margin: 2rem 0 3rem;
+}
+
+.form-container {
+  width: 25rem;
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.form-container label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: #737373;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+  border: 1px solid #b3b3b3;
+  -webkit-appearance: none;
+  line-height: 2rem;
+  padding: 0.3em 0.8rem;
+  font-size: 1em;
+  width: 100%;
+}
+
+.form-container * {
+  outline: none;
+}
+
+.form-container textarea {
+  min-height: 6rem;
 }
