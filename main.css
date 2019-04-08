@@ -566,3 +566,33 @@ nav {
 .form-container textarea {
   min-height: 6rem;
 }
+
+@media(prefers-color-scheme: dark) {
+
+	body {
+		background-color: #33323b;
+		color: #d9d6e7;
+	}
+
+	body a {
+		color: #e4e4e4;
+	}
+
+	body ::selection {
+		background: #69c869;
+		color: #000;
+	}
+
+	body .about {
+		color: #fff;
+	}
+
+	body strong 	{
+		color: #fff;
+	}
+
+	body .button {
+		background-color: #328dcf;
+	}
+
+}
